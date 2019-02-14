@@ -12,10 +12,18 @@ public class Main {
         int weightInKg, heightInMeters;
         Scanner keyboard;
 
+
+
+
         //initialize
 
-        BMI = weightInKg/heightInMeters*heightInMeters;
-        keyboard = new Scanner(System.in)
+        keyboard = new Scanner(System.in);
+        System.out.println("What is your weight in kilograms?");
+        weightInKg = keyboard.nextInt();
+        System.out.println("What is your height in meters?");
+        heightInMeters = keyboard.nextInt();
+        BMI = weightInKg/(heightInMeters*heightInMeters);
+
 
 
 
