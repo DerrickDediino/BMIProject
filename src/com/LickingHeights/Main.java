@@ -10,7 +10,8 @@ public class Main {
 
         int BMI;
         int weightInKg, heightInM;
-        double weightInLb, heightInFt;
+        double weightInLb, heightInInches;
+        String Name;
         Scanner keyboard;
 
 
@@ -19,13 +20,22 @@ public class Main {
         //initialize
 
         keyboard = new Scanner(System.in);
-        System.out.println("What is your weight in pounds?");
+        System.out.println("Hello. What is your name?");
+        Name = keyboard.nextLine();
+        System.out.println("Greetings " + Name + "." + "  This is the BMI calculator.");
+        System.out.println("Please type your weight in pounds?");
         weightInKg = keyboard.nextInt();
-        System.out.println("What is your height in feet?");
+        System.out.println("Now, do the same for your height(in inches)?");
         heightInM = keyboard.nextInt();
         BMI = weightInKg/(heightInM*heightInM);
         weightInLb = weightInKg*(1/0.453592);
-        heightInFt = heightInM*(0.3048);
+        heightInInches = heightInM*(0.3048);
+
+        //Apply
+
+
+
+        System.out.println(Name + ", your BMI = " + BMI);
 
 
 
