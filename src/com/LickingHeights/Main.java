@@ -4,13 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String BMI;
-        BMI = 
+       //declare
+
+        int BMI;
+        int weightInKg, heightInMeters;
 
 
+        //initialize
 
-
-
+        BMI = weightInKg/heightInMeters*heightInMeters;
+        
 
 
 
