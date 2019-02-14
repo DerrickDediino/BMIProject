@@ -27,9 +27,10 @@ public class Main {
         weightInKg = keyboard.nextInt();
         System.out.println("Now, do the same for your height(in inches).");
         heightInM = keyboard.nextInt();
-        BMI = weightInKg/(heightInM*heightInM);
-        weightInLb = weightInKg*(1/0.453592);
+        weightInLb = weightInKg*(0.453592);
         heightInInches = heightInM*(0.0254);
+        BMI = weightInKg/(heightInM*heightInM);
+
 
         //Apply
 
