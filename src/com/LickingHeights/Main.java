@@ -9,7 +9,8 @@ public class Main {
        //declare
 
         int BMI;
-        int weightInKg, heightInMeters;
+        int weightInKg, heightInM;
+        double weightInLb, heightInFt;
         Scanner keyboard;
 
 
@@ -18,11 +19,15 @@ public class Main {
         //initialize
 
         keyboard = new Scanner(System.in);
-        System.out.println("What is your weight in kilograms?");
+        System.out.println("What is your weight in pounds?");
         weightInKg = keyboard.nextInt();
-        System.out.println("What is your height in meters?");
-        heightInMeters = keyboard.nextInt();
-        BMI = weightInKg/(heightInMeters*heightInMeters);
+        System.out.println("What is your height in feet?");
+        heightInM = keyboard.nextInt();
+        BMI = weightInKg/(heightInM*heightInM);
+        weightInLb = weightInKg*(1/0.453592);
+        heightInFt = heightInM*(0.3048);
+
+
 
 
 
